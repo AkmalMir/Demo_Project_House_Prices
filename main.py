@@ -7,17 +7,17 @@ import shap
 import lightgbm as lgb
 import matplotlib.pyplot as plt
 from sklearn.ensemble import RandomForestRegressor
-from sklearn.tree import DecisionTreeRegressor
+#from sklearn.tree import DecisionTreeRegressor
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_absolute_error,mean_squared_error,r2_score
 from lime.lime_tabular import LimeTabularExplainer
 import streamlit.components.v1 as components
-import IPython
-import pipreqs
+#import IPython
+#import pipreqs
 
-if __name__ == "__main__":
-    pipreqs.get_pip_requirements()
-
+#if __name__ == "__main__":
+#    pipreqs.get_pip_requirements()
+#
 
 MODEL = lgb.LGBMRegressor() # #
 
