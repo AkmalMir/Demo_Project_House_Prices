@@ -1,5 +1,4 @@
-# My first Streamlit Project
-House Price Prediction with Streamlit
+# My first House Price Prediction Project with Streamlit
 
 Welcome to the House Price Prediction project! This project aims to predict house prices using machine learning techniques and provide a user-friendly interface for exploring the predictions.
 
