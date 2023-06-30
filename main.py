@@ -43,7 +43,7 @@ with features:
     numeric_cols = df.select_dtypes('number').fillna(0)
     y = numeric_cols.pop("Price")
     cols_select = ['Rooms',
-                   'Bathroom',
+                   #'Bathroom',
                    'Distance',
                    'Car',
                    'Landsize'
@@ -61,12 +61,12 @@ st.sidebar.header("Select Params")
 with model_prediction:
     def newfeatures():
         ROOMS = st.sidebar.slider('Rooms', int(X['Rooms'].min()), int(X['Rooms'].max())) #X['Rooms'].mean(), format='%d'
-        BATHROOMS = st.sidebar.slider('Bathroom', int(X['Bathroom'].min()), int(X['Bathroom'].max())) #X['Bathroom'].mean(), format='%d'
+        #BATHROOMS = st.sidebar.slider('Bathroom', int(X['Bathroom'].min()), int(X['Bathroom'].max())) #X['Bathroom'].mean(), format='%d'
         DISTANCE = st.sidebar.slider('Distance from Central Business District', int(X['Distance'].min()), int(X['Distance'].max()))
         CAR = st.sidebar.slider('Number of carspots', int(X['Car'].min()), int(X['Car'].max()))
         LANDSIZE = st.sidebar.slider('Landsize', int(X['Landsize'].min()), int(X['Landsize'].max()))
         data = {"ROOMS": int(ROOMS), 
-                "BATHROOM": int(BATHROOMS),
+                #"BATHROOM": int(BATHROOMS),
                 "Distance from CBD": int(DISTANCE),
                 "Number of carspots": int(CAR),
                 "LANDSIZE": int(LANDSIZE),
