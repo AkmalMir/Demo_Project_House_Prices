@@ -127,4 +127,4 @@ with explanation:
     #st.write(explanation.show_in_notebook(show_table=True),unsafe_allow_html=True)
 
     html = explanation.as_html()
-    components.html(html, height=800) 
+    st.write(components.html(html, height=800))
